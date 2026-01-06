@@ -1,0 +1,140 @@
+﻿Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Attachment,Attachment,Custom field (Actual end),Custom field (Actual start),Custom field (Approvals),Custom field (Change reason),Custom field (Change risk),Custom field (Change type),Custom field (Development),Custom field (Epic Color),Custom field (Epic Name),Custom field (Epic Status),Custom field (Focus Areas),Custom field (Goals),Custom field (Impact),Custom field (Issue color),Custom field (Locked forms),Custom field (Open forms),Custom field (Project overview key),Custom field (Project overview status),Custom field (Rank),Custom field (Request Type),Custom field (Sentiment),Custom field (Start date),Custom field (Story Points),Custom field (Story point estimate),Custom field (Submitted forms),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Total forms),Custom field (Vulnerability),Custom field ([CHART] Date of First Response),Custom field ([CHART] Time in Status),Status Category,Status Category Changed
+UI:Цвет кнопок удаления товара не соответствует цвету на макете.,UQHF-13,10046,Bug,To Do,UQHF,Поиск багов в Корзине,software,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,,Low,,,,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,01/Dec/25 10:55 PM,01/Dec/25 10:56 PM,01/Dec/25 10:55 PM,,,0,"Окружение: Chrome/Windows 10.[https://intern.demoshopping.ru/|https://intern.demoshopping.ru/|smart-link]
+
+Описание: При сверке макета с Figma и сайта выявлено не соответствие цвета кнопок “Удалить”
+
+Предварительные условия:
+
+1.Пользователь авторизован
+
+2.Открыта корзина
+
+3.В корзина добавлено 2 товара
+
+Шаги: 
+
+1.Открыть Figma c макетом [https://www.figma.com/proto/2T99Jt5OHPqkhe4yyoe2IC/demoshopping.ru?node-id=1-280&t=pRjz23WSXZ9ATDQi-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1|https://www.figma.com/proto/2T99Jt5OHPqkhe4yyoe2IC/demoshopping.ru?node-id=1-280&t=pRjz23WSXZ9ATDQi-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1|smart-link] 
+
+2.Визуально сравниваем макет и сайт
+
+3.Обнаруживаем не соответствие цвета (ЗЕЛЕНЫЙ) кнопки “Удалить” в макете  с сайтом.
+
+Ожидаемый результат: Кнопка “Удалить” соответствует цвету в макете (КРАСНЫЙ)
+
+!Снимок экрана 2025-12-01 224403-20251201-204407.png|width=671,alt=""Снимок экрана 2025-12-01 224403-20251201-204407.png""!
+
+!Снимок экрана 2025-12-01 224440-20251201-204443.png|width=671,alt=""Снимок экрана 2025-12-01 224440-20251201-204443.png""!",,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,,,,,,,,,01/Dec/25 10:55 PM;81086066-44a5-4c99-bfaf-2c19276076b4;Снимок экрана 2025-12-01 224403-20251201-204407.png;https://dreambot0081.atlassian.net/rest/api/3/attachment/content/10074,01/Dec/25 10:55 PM;81086066-44a5-4c99-bfaf-2c19276076b4;Снимок экрана 2025-12-01 224440-20251201-204443.png;https://dreambot0081.atlassian.net/rest/api/3/attachment/content/10075,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@64fc445c,,,,,,,,,,,,,,,,0|i0000v:,,,,,,,,,,,,,,To Do,01/Dec/25 10:55 PM
+Logic: Валюты (USD в каталоге vs RUB в корзине).,UQHF-12,10045,Bug,To Do,UQHF,Поиск багов в Корзине,software,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,,High,,,,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,01/Dec/25 10:31 PM,01/Dec/25 10:36 PM,01/Dec/25 10:32 PM,,,0,"Окружение: Chrome/Windows 10. [https://intern.demoshopping.ru/|https://intern.demoshopping.ru/|smart-link] 
+
+Предварительные условия: 
+
+1.Пользователь авторизован
+
+2.Открыта главная страница с товарами
+
+Шаги: 
+
+1.В каталоге выбираем товар.
+
+2.Товаров добавляем  в корзину (Цена за товар указано в USD)
+
+2.Переходим в Корзину 
+
+3.Цена товара изменилась из USD в RUB
+
+Ожидаемый результат: Цена и валюта указанная в каталоге соответствует цене и валюте в корзине.
+
+!Screenshot_4-20251201-202613.png|width=671,alt=""Screenshot_4-20251201-202613.png""!
+
+!Screenshot_5-20251201-202520.png|width=671,alt=""Screenshot_5-20251201-202520.png""!",,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,,,,,,,,,01/Dec/25 10:31 PM;81086066-44a5-4c99-bfaf-2c19276076b4;Screenshot_4-20251201-202613.png;https://dreambot0081.atlassian.net/rest/api/3/attachment/content/10071,01/Dec/25 10:31 PM;81086066-44a5-4c99-bfaf-2c19276076b4;Screenshot_5-20251201-202520.png;https://dreambot0081.atlassian.net/rest/api/3/attachment/content/10072,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4addfd66,,,,,,,,,,,,,,,,0|i0000n:,,,,,,,,,,,,,,To Do,01/Dec/25 10:31 PM
+UI: Реализация страницы пустой корзины не соответствует макету.,UQHF-11,10044,Bug,To Do,UQHF,Поиск багов в Корзине,software,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,,Medium,,,,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,01/Dec/25 10:12 PM,01/Dec/25 10:37 PM,01/Dec/25 10:51 PM,,,0,"Окружение: Chrome/Windows 10.[https://intern.demoshopping.ru/|https://intern.demoshopping.ru/|smart-link] 
+
+Описание: При сверке макета с Figma и сайта выявлено не соответствие состояния пустой корзины.
+
+Предварительное условие: 
+
+1.Пользователь авторизован
+
+2.Открыта корзина  
+
+3.Корзина пуста(в ней нет товаров)
+
+Шаги: 
+
+1.Открыть макет Figma c проектом [https://www.figma.com/design/2T99Jt5OHPqkhe4yyoe2IC/demoshopping.ru?node-id=0-1&p=f&t=bnYUfuAeCHcfehtL-0|https://www.figma.com/design/2T99Jt5OHPqkhe4yyoe2IC/demoshopping.ru?node-id=0-1&p=f&t=bnYUfuAeCHcfehtL-0|smart-link] 
+
+2.Визуально сравниваем макет и сайт обнаруживаем не соответствие макета с сайтом.
+
+Ожидаемый результат: Верстка страницы полностью соответствует макету.
+
+Фактический результат: Наблюдаются визуальные расхождения: текст, расположение заголовка и кнопок отличается от макета (см. скриншоты)
+
+!Screenshot_2-20251201-200937.png|width=671,alt=""Screenshot_2-20251201-200937.png""!
+
+!Снимок экрана 2025-12-01 215717-20251201-195717.png|width=671,alt=""Снимок экрана 2025-12-01 215717-20251201-195717.png""!",,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,,,,,,,,,01/Dec/25 10:12 PM;81086066-44a5-4c99-bfaf-2c19276076b4;Screenshot_2-20251201-200937.png;https://dreambot0081.atlassian.net/rest/api/3/attachment/content/10070,01/Dec/25 10:12 PM;81086066-44a5-4c99-bfaf-2c19276076b4;Снимок экрана 2025-12-01 215717-20251201-195717.png;https://dreambot0081.atlassian.net/rest/api/3/attachment/content/10069,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@67e401e0,,,,,,,,,,,,,,,,0|i0000f:,,,,,,,,,,,,,,To Do,01/Dec/25 10:12 PM
+Security (Network-Payload) Раскрытие данных карт при покупке товара.,UQHF-8,10041,Bug,To Do,UQHF,Поиск багов в Корзине,software,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,,Highest,,,,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,01/Dec/25 9:24 PM,01/Dec/25 10:40 PM,01/Dec/25 10:37 PM,,,0,"Окружение: Chrome/Windows 10.[https://intern.demoshopping.ru/|https://intern.demoshopping.ru/|smart-link] 
+
+Описание: После покупки товара было обнаружено в DevTools в вкладке Network--> Payload критическую ошибку в раскрытие данных карт покупателя.
+
+Предварительное условие: 
+
+1.Пользователь авторизован
+
+2.Находиться на странице оплаты[https://intern.demoshopping.ru/payment|https://intern.demoshopping.ru/payment|smart-link] 
+
+3.Открыт DevTools->Network 
+
+4.Нужны валидная карта и валидный email.
+
+Шаги: 
+
+1.На странице оплаты выбираем подходящую платежную систему под нашу карту.
+
+2.Заполняем поля для карты валидными данными, пишем  Имя ,Фамилия (Латинскими буквами*).
+
+3.Нажимаем на кнопку “Оформить заказ”.
+
+4.В DevTools → Network в списке запросов выбираем “pay” .
+
+5.Перейти во вкладку Payload этого запроса.
+
+6. В этой вкладке видны все данные карты (номер и CVV), они не скрыты.
+
+Ожидаемый результат: Данные карты должны быть скрыты или зашифрованы.
+
+!Снимок экрана 2025-12-01 223931-20251201-203940.png|width=667,alt=""Снимок экрана 2025-12-01 223931-20251201-203940.png""!
+
+
+
+!Screenshot_4-20251201-190419.png|width=671,alt=""Screenshot_4-20251201-190419.png""!",,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,,,,,,,,,01/Dec/25 9:24 PM;81086066-44a5-4c99-bfaf-2c19276076b4;Screenshot_4-20251201-190419.png;https://dreambot0081.atlassian.net/rest/api/3/attachment/content/10036,01/Dec/25 10:40 PM;81086066-44a5-4c99-bfaf-2c19276076b4;Снимок экрана 2025-12-01 223931-20251201-203940.png;https://dreambot0081.atlassian.net/rest/api/3/attachment/content/10073,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5a4aaed8,,,,,,,,,,,,,,,,0|i00007:,,,,,,,,,,,,,,To Do,01/Dec/25 9:24 PM
+"Console- после нажатия на кнопку ""Оформить заказ"" вылазит ошибка",UQHF-1,10002,Bug,To Do,UQHF,Поиск багов в Корзине,software,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,,Medium,,,,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,01/Dec/25 12:16 AM,01/Dec/25 10:41 PM,01/Dec/25 10:40 PM,,,0,"Окружение: Chrome/Windows 10 [https://intern.demoshopping.ru/|https://intern.demoshopping.ru/|smart-link] 
+
+Описание: В корзине после нажатия кнопки “Оформить заказ” и перехода на страницу оформления заказа в DevTools вкладка Console вылазит ошибка.
+
+Предварительное условие: 
+
+1.Пользователь авторизован.
+
+2.Находиться в корзине 
+
+3.В корзине есть товар
+
+4.Открыт DevTools (f12) -->Console.
+
+Шаги:
+
+1.Нажимаем кнопку “Оформить заказ”.
+
+2.Переходим на оплату товара и после этого в Console вылазит ошибка -
+
+{quote} app.js:4 Uncaught TypeError: Cannot read properties of null (reading 'addEventListener')
+
+at HTMLDocument.<anonymous> (app.js:4:5)
+
+(anonymous) @ app.js:4 {quote}
+
+Ожидаемый результат: Ошибок в DevTools-->Console быть не должно.
+
+!Screenshot_11-20251130-215609.png|width=671,alt=""Screenshot_11-20251130-215609.png""!
+
+!Screenshot_12-20251130-215503.png|width=671,alt=""Screenshot_12-20251130-215503.png""!",,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,,,,,,,,,01/Dec/25 12:16 AM;81086066-44a5-4c99-bfaf-2c19276076b4;Screenshot_11-20251130-215609.png;https://dreambot0081.atlassian.net/rest/api/3/attachment/content/10003,01/Dec/25 12:16 AM;81086066-44a5-4c99-bfaf-2c19276076b4;Screenshot_12-20251130-215503.png;https://dreambot0081.atlassian.net/rest/api/3/attachment/content/10002,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1d665f70,,,,,,,,,,,,,,,,0|hzzzzz:,,,,,,,,,,,,,,To Do,01/Dec/25 12:16 AM

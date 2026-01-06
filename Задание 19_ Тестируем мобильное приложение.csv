@@ -1,0 +1,93 @@
+﻿Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Attachment,Custom field (Actual end),Custom field (Actual start),Custom field (Approvals),Custom field (Change reason),Custom field (Change risk),Custom field (Change type),Custom field (Development),Custom field (Epic Color),Custom field (Epic Name),Custom field (Epic Status),Custom field (Focus Areas),Custom field (Goals),Custom field (Impact),Custom field (Issue color),Custom field (Locked forms),Custom field (Open forms),Custom field (Project overview key),Custom field (Project overview status),Custom field (Rank),Custom field (Request Type),Custom field (Sentiment),Custom field (Start date),Custom field (Story Points),Custom field (Story point estimate),Custom field (Submitted forms),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Total forms),Custom field (Vulnerability),Custom field ([CHART] Date of First Response),Custom field ([CHART] Time in Status),Status Category,Status Category Changed
+Приложение падает при быстром удалении нескольких задач,SL-6,10084,Bug,To Do,SL,shopping-list,software,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,,Highest,,,,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,26/Dec/25 7:43 PM,26/Dec/25 7:44 PM,26/Dec/25 7:43 PM,,,0,"*Шаги воспроизведения:*
+
+1.Зайти в приложение
+
+2.Создать 3-5 задач на кириллице
+
+3.Удалять их быстро без паузы
+
+*Фактический результат:* приложение закрывается с ошибкой (java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 1)","*Device:* Android Emulator (Medium Phone).
+
+*OS / Version (ОС):* Android API 36.1
+
+*Host OS:* Windows 11 Home.",NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,,,,,,,,,26/Dec/25 7:42 PM;81086066-44a5-4c99-bfaf-2c19276076b4;crash_log.txt;https://dreambot0081.atlassian.net/rest/api/3/attachment/content/10117,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@71f73b67,,,,,,,,,,,,,,,,0|i00027:,,,,,,,,,,,,,,To Do,26/Dec/25 7:43 PM
+Ошибка локализации UI,SL-5,10083,Bug,To Do,SL,shopping-list,software,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,,Medium,,,,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,26/Dec/25 7:04 PM,26/Dec/25 7:04 PM,26/Dec/25 7:05 PM,,,0,"*Шаги воспроизведения:*
+
+1.Открыть приложение
+
+2.В строке ввода текста пишет “Enter a text”
+
+3.В списке задач кнопка называется “DELETE“
+
+*Ожидаемый результат:* 
+
+1.В строке ввода текста пишет “Введите текст ”
+
+2.В списка задач кнопка называется “УДАЛИТЬ”","*Device:* Android Emulator (Medium Phone).
+
+*OS / Version (ОС):* Android API 36.1
+
+*Host OS:* Windows 11 Home.",NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,,,,,,,,,26/Dec/25 7:04 PM;81086066-44a5-4c99-bfaf-2c19276076b4;Screenshot_6.png;https://dreambot0081.atlassian.net/rest/api/3/attachment/content/10115,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@63526465,,,,,,,,,,,,,,,,0|i0001z:,,,,,,,,,,,,,,To Do,26/Dec/25 7:04 PM
+"Отсутствует валидация символов при редактировании задачи (можно ввести латиницу, цифры и спецсимволы)",SL-4,10082,Bug,To Do,SL,shopping-list,software,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,,Medium,,,,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,26/Dec/25 6:34 PM,26/Dec/25 6:36 PM,26/Dec/25 7:00 PM,,,0,"*Шаги воспроизведения:*
+
+1.Открыть приложение
+
+2.Ввести символы на кириллице в строку ввода и нажать “ДОБАВИТЬ ЗАДАЧУ”
+
+3.Долгим нажатием на задачу открыть редактор задачи
+
+4.В поле ввода ввести символы для проверки (*Например:* 4441, ASAKir, \!#\!\!#\!)
+
+*Фактический результат:* Изменения успешно сохраняются ,ошибка отсутствует
+
+*Ожидаемый результат:* Ошибка “Задача должна быть на русском языке”","*Device:* Android Emulator (Medium Phone).
+
+*OS / Version (ОС):* Android API 36.1
+
+*Host OS:* Windows 11 Home.",NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,,,,,,,,,26/Dec/25 6:34 PM;81086066-44a5-4c99-bfaf-2c19276076b4;Screenshot_5.png;https://dreambot0081.atlassian.net/rest/api/3/attachment/content/10113,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@cd23c92,,,,,,,,,,,,,,,,0|i0001r:,,,,,,,,,,,,,,To Do,26/Dec/25 6:34 PM
+"Возможность создать ""пустую"" задачу (используя только пробелы)",SL-3,10081,Bug,To Do,SL,shopping-list,software,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,,Medium,,,,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,26/Dec/25 6:17 PM,26/Dec/25 6:22 PM,26/Dec/25 6:23 PM,,,0,"*Шаги :*
+
+1.Открыть приложение
+
+2.В поле ввода ввести пробелы (3-5)
+
+3.Нажать кнопку “ДОБАВИТЬ ЗАДАЧУ”
+
+*Фактический результат:* Задача с пустым полем появилась в списке задач
+
+*Ожидаемый результат:*  Ошибка: “Задача не может быть пустой” ,задача не появляется в списке .","*Device:* Android Emulator (Medium Phone).
+
+*OS / Version (ОС):* Android API 36.1
+
+*Host OS:* Windows 11 Home.",NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,,,,,,,,,26/Dec/25 6:16 PM;81086066-44a5-4c99-bfaf-2c19276076b4;Screenshot_4.png;https://dreambot0081.atlassian.net/rest/api/3/attachment/content/10111,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@2ef9002e,,,,,,,,,,,,,,,,0|i0001j:,,,,,,,,,,,,,,To Do,26/Dec/25 6:17 PM
+Приложение позволяет создать более 10 задач (нарушение требования),SL-2,10080,Bug,To Do,SL,shopping-list,software,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,,Medium,,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,26/Dec/25 6:03 PM,26/Dec/25 6:08 PM,26/Dec/25 6:13 PM,,,0,"*Шаги воспроизведения:*
+
+1.Открыть приложение 
+
+2.Создать 10 задач на кириллице
+
+3.Создать 11 задачу на кириллице
+
+*Фактический результат:* Задача создана и появляется в списке
+
+*Ожидаемый результат:* Ошибка: (Нельзя создать больше 10 задач.)","*Device:* Android Emulator (Medium Phone).
+
+*OS / Version (ОС):* Android API 36.1
+
+*Host OS:* Windows 11 Home.",NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@669d2399,,,,,,,,,,,,,,,,0|i0001b:,,,,,,,,,,,,,,To Do,26/Dec/25 6:03 PM
+Ошибка ввода максимального количества символов (25) в поле ввода,SL-1,10079,Bug,To Do,SL,shopping-list,software,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,,Medium,,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,26/Dec/25 5:49 PM,26/Dec/25 5:49 PM,26/Dec/25 5:58 PM,,,0,"*Шаги воспроизведения:*
+
+1.Открыть приложение
+
+2.В поле ввода создании задачи ввести 25 символов на кириллице ( *Например:* йцукенгшщздлорпавыфячсмит )
+
+3.Нажать “ДОБАВИТЬ ЗАДАЧУ”
+
+*Фактический результат:* Появляется ошибка, задача не сохраняется. 
+
+*Ожидаемый результат:* Задача успешно создана (так как 25 символов — это разрешенный максимум).","*Device:* Android Emulator (Medium Phone).
+
+*OS / Version (ОС):* Android API 36.1 
+
+*Host OS:* Windows 11 Home.",NoName,712020:195cc6af-65b7-4b6e-8a66-c7a2284b9733,,,,,,,,,26/Dec/25 5:39 PM;81086066-44a5-4c99-bfaf-2c19276076b4;Screenshot_2.png;https://dreambot0081.atlassian.net/rest/api/3/attachment/content/10109,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@33529fcf,,,,,,,,,,,,,,,,0|i00013:,,,,,,,,,,,,,,To Do,26/Dec/25 5:49 PM
